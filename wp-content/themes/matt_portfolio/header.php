@@ -56,3 +56,7 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+		<div class="row">
+			<div class="column column-offset-50">test</div>
+		</div>

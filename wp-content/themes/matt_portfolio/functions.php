@@ -120,7 +120,8 @@ add_action( 'widgets_init', 'matt_portfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function matt_portfolio_scripts() {
-	wp_enqueue_style( 'matt_portfolio-style', get_stylesheet_uri() );
+	// wp_enqueue_style( 'matt_portfolio-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'matt_portfolio-style', get_template_directory_uri() . '/dist/css/style.min.css' );
 
 	wp_enqueue_script( 'matt_portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
