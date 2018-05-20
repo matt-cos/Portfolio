@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer ta-c">
 		All work Copyright Matt Cos <?php echo date('Y'); ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
