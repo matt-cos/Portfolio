@@ -30,7 +30,6 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<!-- <h1 class="site-title"><a href="<?php // echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php // bloginfo( 'name' ); ?></a></h1> -->
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<?php
 			else :
@@ -46,22 +45,14 @@
 		</div><!-- .site-branding -->
 
 		<div class="container">
-			<div class="row">
-				<div class="column"><button>GitHub</button></div>
-				<div class="column"><button>LinkedIn</button></div>
-				<div class="column"><button>Contact</button></div>
+			<div class="row ta-c">
+				<div class="column">
+					<button>GitHub</button>
+					<button>LinkedIn</button>
+					<button>Contact</button>
+				</div>
 			</div>
 		</div>
-
-		<!-- <nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'matt_portfolio' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav>-->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

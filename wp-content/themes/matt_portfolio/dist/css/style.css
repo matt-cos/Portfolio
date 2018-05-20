@@ -42,12 +42,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-.ta-c {
-  text-align: center; }
-
-.tt-u {
-  text-transform: uppercase; }
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -915,7 +909,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #2F1A31;
+  color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -1395,3 +1389,19 @@ object {
 
 .gallery-caption {
   display: block; }
+
+.ta-c {
+  text-align: center; }
+
+.tt-u {
+  text-transform: uppercase; }
+
+.site-title {
+  margin-bottom: 0; }
+
+.site-footer {
+  background-color: #333;
+  color: #FFFFFA;
+  padding: 20px; }
+  .site-footer p {
+    margin: 0; }

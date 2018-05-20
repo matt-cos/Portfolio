@@ -44,14 +44,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-.ta-c {
-	text-align: center;
-}
-
-.tt-u {
-	text-transform: uppercase;
-}
-
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
@@ -119,3 +111,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+
+.ta-c {
+	text-align: center;
+}
+
+.tt-u {
+	text-transform: uppercase;
+}
+
+.site-title {
+	margin-bottom: 0;
+}
+
+.site-footer {
+	background-color: $color__text-main;
+	color: $color__background-body;
+	padding: 20px;
+
+	p {
+		margin: 0;
+	}
+}

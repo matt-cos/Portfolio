@@ -14,7 +14,8 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer ta-c">
-		All work Copyright Matt Cos <?php echo date('Y'); ?>
+		<p>Drop me a line here.</p>
+		<p>&copy; Matt Cos <?php echo date('Y'); ?></p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
