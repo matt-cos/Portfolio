@@ -6,8 +6,6 @@
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
  */
 
-alert('test');
-
 // ( function( $ ) {
 
 // 	// Site title and description.

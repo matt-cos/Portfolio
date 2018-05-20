@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'matt_portfolio' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding ta-c">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -44,7 +44,15 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<div class="container">
+			<div class="row">
+				<div class="column"><button>GitHub</button></div>
+				<div class="column"><button>LinkedIn</button></div>
+				<div class="column"><button>Contact</button></div>
+			</div>
+		</div>
+
+		<!-- <nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'matt_portfolio' ); ?></button>
 			<?php
 			wp_nav_menu( array(
@@ -52,11 +60,7 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>-->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
-		<div class="row">
-			<div class="column column-offset-50">test</div>
-		</div>

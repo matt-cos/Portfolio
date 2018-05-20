@@ -42,6 +42,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+.ta-c {
+  text-align: center; }
+
+.tt-u {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -351,13 +357,6 @@ template {
 /*--------------------------------------------------------------
 # Grid (Milligram)
 --------------------------------------------------------------*/
-/*!
- * Milligram v1.3.0
- * https://milligram.github.io
- *
- * Copyright (c) 2017 CJ Patoilo
- * Licensed under the MIT license
- */
 *,
 *:after,
 *:before {
@@ -366,8 +365,7 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%; }
+  box-sizing: border-box; }
 
 body {
   color: #606c76;
@@ -599,7 +597,7 @@ input[type='radio'] {
 
 .container {
   margin: 0 auto;
-  max-width: 112.0rem;
+  max-width: 50.0rem;
   padding: 0 2.0rem;
   position: relative;
   width: 100%; }
@@ -909,6 +907,7 @@ img {
 
 .float-right {
   float: right; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/

@@ -43,6 +43,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
+.ta-c {
+	text-align: center;
+}
+
+.tt-u {
+	text-transform: uppercase;
+}
+
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
