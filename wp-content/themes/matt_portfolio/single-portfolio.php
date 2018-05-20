@@ -16,25 +16,11 @@ get_header();
 				<div class="row">
 					<div class="column column-25">
 						<dl>
-
-						<?php 
-							$args = array('post_type' => 'portfolio'); 
-							$loop = new WP_Query($args);
-							
-							if ( $loop->have_posts() ): 
-								while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-									<dt><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></dt>
-
-								<?php endwhile;
-
-							else:
-
-							endif;
-				
-							wp_reset_postdata(); 
-						?>
-
+							<dt>SINGLE PORTFOLIO ITEM</dt>
+							<dt>Project Name</dt>
+							<dt>Project Name</dt>
+							<dt>Project Name</dt>
+							<dt>Project Name</dt>
 						</dl>
 					</div>
 					<div class="column column-75">PICTURE BOX</div>

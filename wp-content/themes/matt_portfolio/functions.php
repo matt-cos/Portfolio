@@ -122,6 +122,7 @@ add_action( 'widgets_init', 'matt_portfolio_widgets_init' );
 function matt_portfolio_scripts() {
 	// wp_enqueue_style( 'matt_portfolio-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'matt_portfolio-style', get_template_directory_uri() . '/dist/css/style.min.css' );
+	wp_enqueue_style( 'playfair-display', 'https://fonts.googleapis.com/css?family=Playfair+Display:700' );
 
 	// wp_enqueue_script( 'matt_portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'matt_portfolio-navigation', get_template_directory_uri() . '/dist/js/scripts.min.js', array(), '876', true );
@@ -133,6 +134,65 @@ function matt_portfolio_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'matt_portfolio_scripts' );
+
+// Register Custom Post Type Portfolio Item
+// Post Type Key: portfolioitem
+function create_portfolioitem_cpt() {
+
+	$labels = array(
+		'name' => __( 'Portfolio Items', 'Post Type General Name', 'textdomain' ),
+		'singular_name' => __( 'Portfolio Item', 'Post Type Singular Name', 'textdomain' ),
+		'menu_name' => __( 'Portfolio Items', 'textdomain' ),
+		'name_admin_bar' => __( 'Portfolio Item', 'textdomain' ),
+		'archives' => __( 'Portfolio Item Archives', 'textdomain' ),
+		'attributes' => __( 'Portfolio Item Attributes', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Portfolio Item:', 'textdomain' ),
+		'all_items' => __( 'All Portfolio Items', 'textdomain' ),
+		'add_new_item' => __( 'Add New Portfolio Item', 'textdomain' ),
+		'add_new' => __( 'Add New', 'textdomain' ),
+		'new_item' => __( 'New Portfolio Item', 'textdomain' ),
+		'edit_item' => __( 'Edit Portfolio Item', 'textdomain' ),
+		'update_item' => __( 'Update Portfolio Item', 'textdomain' ),
+		'view_item' => __( 'View Portfolio Item', 'textdomain' ),
+		'view_items' => __( 'View Portfolio Items', 'textdomain' ),
+		'search_items' => __( 'Search Portfolio Item', 'textdomain' ),
+		'not_found' => __( 'Not found', 'textdomain' ),
+		'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+		'featured_image' => __( 'Featured Image', 'textdomain' ),
+		'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+		'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+		'insert_into_item' => __( 'Insert into Portfolio Item', 'textdomain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Portfolio Item', 'textdomain' ),
+		'items_list' => __( 'Portfolio Items list', 'textdomain' ),
+		'items_list_navigation' => __( 'Portfolio Items list navigation', 'textdomain' ),
+		'filter_items_list' => __( 'Filter Portfolio Items list', 'textdomain' ),
+	);
+	$args = array(
+		'label' => __( 'Portfolio Item', 'textdomain' ),
+		'description' => __( '', 'textdomain' ),
+		'labels' => $labels,
+		'menu_icon' => 'dashicons-book-alt',
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'custom-fields', ),
+		'taxonomies' => array('Expertise', ),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'menu_position' => 5,
+		'show_in_admin_bar' => true,
+		'show_in_nav_menus' => true,
+		'can_export' => true,
+		'has_archive' => false,
+		'hierarchical' => true,
+		'exclude_from_search' => false,
+		'show_in_rest' => true,
+		'publicly_queryable' => true,
+		'capability_type' => 'page',
+	);
+	register_post_type( 'portfolio', $args );
+
+}
+add_action( 'init', 'create_portfolioitem_cpt', 0 );
 
 /**
  * Implement the Custom Header feature.
