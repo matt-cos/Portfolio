@@ -122,7 +122,7 @@ add_action( 'widgets_init', 'matt_portfolio_widgets_init' );
 function matt_portfolio_scripts() {
 	// wp_enqueue_style( 'matt_portfolio-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'matt_portfolio-style', get_template_directory_uri() . '/dist/css/style.min.css' );
-	wp_enqueue_style( 'playfair-display', 'https://fonts.googleapis.com/css?family=Playfair+Display:700' );
+	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700' );
 
 	// wp_enqueue_script( 'matt_portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'matt_portfolio-navigation', get_template_directory_uri() . '/dist/js/scripts.min.js', array(), '876', true );
