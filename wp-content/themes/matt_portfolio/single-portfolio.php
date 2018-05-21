@@ -15,13 +15,15 @@ get_header();
 			<div class="container">
 				<div class="row">
 					<div class="column column-25">
-						<dl>
-							<dt>SINGLE PORTFOLIO ITEM</dt>
-							<dt>Project Name</dt>
-							<dt>Project Name</dt>
-							<dt>Project Name</dt>
-							<dt>Project Name</dt>
-						</dl>
+						<?php
+							while ( have_posts() ) : the_post();
+
+								get_template_part( 'template-parts/content', get_post_type() );
+
+								// the_post_navigation();
+
+							endwhile; // End of the loop.
+							?>
 					</div>
 					<div class="column column-75">PICTURE BOX</div>
 				</div>
