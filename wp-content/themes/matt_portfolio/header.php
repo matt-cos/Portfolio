@@ -49,6 +49,7 @@
 					<a href="/contact" class="button"><i class="fa fa-envelope-o"></i></a>
 				</div>
 			</div>
+			<hr>
 		</div>
 	</header><!-- #masthead -->
 

@@ -1398,12 +1398,19 @@ object {
 .tt-u {
   text-transform: uppercase; }
 
+hr {
+  margin-top: 35px;
+  border-color: #333; }
+
 .content-area {
   margin-top: 30px; }
 
 .site-title {
   margin-bottom: 0;
   margin-top: 35px; }
+
+.entry-title {
+  margin-bottom: 0; }
 
 .site-description {
   margin-bottom: 13px; }
