@@ -16,6 +16,11 @@
 	<footer id="colophon" class="site-footer ta-c">
 		<p>Drop me a line here.</p>
 		<p>&copy; Matt Cos <?php echo date('Y'); ?></p>
+		<p>
+			<a href=""><i class="fa fa-github"></i></a>
+			<a href=""><i class="fa fa-linkedin"></i></a>
+			<a href=""><i class="fa fa-envelope-o"></i></a>
+		</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

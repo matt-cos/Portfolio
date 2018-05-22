@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script src="https://use.fontawesome.com/377ef84bd2.js"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -28,15 +29,11 @@
 		<div class="site-branding ta-c">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
+			?>
+			
+			<h1 class="site-title"><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
+			
+			<?php
 			$matt_portfolio_description = get_bloginfo( 'description', 'display' );
 			if ( $matt_portfolio_description || is_customize_preview() ) :
 				?>
@@ -47,9 +44,9 @@
 		<div class="container">
 			<div class="row ta-c">
 				<div class="column">
-					<button>GitHub</button>
-					<button>LinkedIn</button>
-					<button>Contact</button>
+					<a href="" class="button"><i class="fa fa-github"></i></a>
+					<a href="" class="button"><i class="fa fa-linkedin"></i></a>
+					<a href="" class="button"><i class="fa fa-envelope-o"></i></a>
 				</div>
 			</div>
 		</div>

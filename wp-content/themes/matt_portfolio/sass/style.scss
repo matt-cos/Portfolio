@@ -121,8 +121,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	text-transform: uppercase;
 }
 
+.content-area {
+	margin-top: 30px;
+}
+
 .site-title {
 	margin-bottom: 0;
+}
+
+.site-description {
+	margin-bottom: 13px;
 }
 
 .site-footer {
@@ -132,5 +140,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 	p {
 		margin: 0;
+	}
+
+	a {
+		color: $color__background-body;
+		margin: 0 10px;	
+		
+		&:hover {
+			color: $color__link;
+		}	
 	}
 }
