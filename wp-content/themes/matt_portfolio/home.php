@@ -40,7 +40,7 @@ get_header();
 						</dl>
 					</div>
 
-					<div id="imgBox" class="column column-75">
+					<div id="imgBox" class="column column-75 ta-c">
 						<img id="imgBox__img" src="" alt="">
 						<p id="imgBox__copy">Click a project to see more!</p>
 					</div>
@@ -52,9 +52,10 @@ get_header();
 	<script>
 		
 		( function( $ ) {
-			$('dt').on('click', function(){
-				var projectImageURL = $(this).attr('data-imagesrc');
-				var fullProjectURL = $(this).attr('data-linksrc');
+
+			function updateProject(target){
+				var projectImageURL = $(target).attr('data-imagesrc');
+				var fullProjectURL = $(target).attr('data-linksrc');
 
 				$("#imgBox__img").attr('src', projectImageURL);
 
@@ -63,6 +64,12 @@ get_header();
 				} else {
 					$('#imgBox__copy').html('<a href="' + fullProjectURL + '">View More</a>');
 				}
+			}
+
+			updateProject('dt:first-child');
+
+			$('dt').on('click', function(){
+				updateProject(this);
 			});
 		} )( jQuery );
 
