@@ -44,9 +44,9 @@
 		<div class="container">
 			<div class="row ta-c">
 				<div class="column">
-					<a href="" class="button"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/matt-cos" class="button" target="_blank"><i class="fa fa-github"></i></a>
 					<a href="" class="button"><i class="fa fa-linkedin"></i></a>
-					<a href="" class="button"><i class="fa fa-envelope-o"></i></a>
+					<a href="/contact" class="button"><i class="fa fa-envelope-o"></i></a>
 				</div>
 			</div>
 		</div>

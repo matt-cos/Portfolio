@@ -1067,7 +1067,8 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
-  padding: 3px; }
+  padding: 3px;
+  background-color: #fff; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -1401,7 +1402,8 @@ object {
   margin-top: 30px; }
 
 .site-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 35px; }
 
 .site-description {
   margin-bottom: 13px; }
