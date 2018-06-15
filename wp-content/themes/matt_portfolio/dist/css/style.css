@@ -384,7 +384,7 @@ input[type='submit'] {
   background-color: #D5C071;
   border: 0.1rem solid #D5C071;
   border-radius: .4rem;
-  color: #FFFFFA !important;
+  color: #FFFFFC !important;
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
@@ -975,7 +975,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #FFFFFA;
+  background: #FFFFFC;
   /* Fallback for when there is no custom background color defined. */ }
 
 hr {
@@ -1402,20 +1402,24 @@ hr {
   margin-top: 35px;
   border-color: #333; }
 
-.project__column {
-  position: relative; }
-
-.project__info {
-  width: 100%;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.project__image {
-  display: block;
-  margin: 30px 0; }
+.project {
+  border: 1px solid #333;
+  padding: 40px;
+  margin-bottom: 40px; }
+  .project__column {
+    position: relative; }
+  .project__info {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .project__image {
+    display: block;
+    margin: 30px 0; }
+  .project.row .column {
+    margin-bottom: initial; }
 
 .content-area {
   margin-top: 30px; }
@@ -1432,12 +1436,12 @@ hr {
 
 .site-footer {
   background-color: #333;
-  color: #FFFFFA;
+  color: #FFFFFC;
   padding: 20px; }
   .site-footer p {
     margin: 0; }
   .site-footer a {
-    color: #FFFFFA;
+    color: #FFFFFC;
     margin: 0 10px; }
     .site-footer a:hover {
       color: #D5C071; }

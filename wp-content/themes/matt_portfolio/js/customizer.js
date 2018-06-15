@@ -40,3 +40,17 @@
 // 		} );
 // 	} );
 // } )( jQuery );
+
+
+( function( $ ) {
+	$(".project").each(function(){
+		var xVal = Math.floor(Math.random() * 81); // returns a number between 0 and 40
+		var yVal = Math.floor(Math.random() * 1); 
+		$(this).css({
+			"-webkit-transform": "translate(" + xVal + "px, " + yVal + "px)",
+			"-moz-transform": "translate(" + xVal + "px, " + yVal + "px)",
+			"-o-transform": "translate(" + xVal + "px, " + yVal + "px)",
+			"transform": "translate(" + xVal + "px, " + yVal + "px)",
+		});
+	});
+} )( jQuery );
